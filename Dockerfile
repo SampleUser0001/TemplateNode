@@ -1,10 +1,8 @@
 FROM node:latest
 
 WORKDIR /opt
+
 COPY .env /opt/.env
-RUN export $(cat .env | grep -v ^# | xargs)
+COPY generate.sh /opt/generate.sh
 
-RUN echo ${PROJECT_NAME}
-
-#WORKDIR /opt/${PROJECT_NAME}
-
+RUN chmod 755 /opt/generate.sh

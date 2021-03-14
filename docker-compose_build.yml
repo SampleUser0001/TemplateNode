@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - .:/opt/
-    command: sh generate.sh
+    command: sh build.sh

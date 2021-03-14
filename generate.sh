@@ -6,11 +6,10 @@ mkdir ${PROJECT_NAME}
 cd ${PROJECT_NAME}
 
 npm init -y 
-# 本来はここまで
 
-# この下はTypeScript用
 npm install --save-dev typescript tslint @types/node
 
+# この下はTypeScript用
 echo '{
   "compilerOptions": {
     "lib": ["es2015"],
