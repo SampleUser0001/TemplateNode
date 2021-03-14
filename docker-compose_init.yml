@@ -1,0 +1,7 @@
+version: '3'
+services:
+  node:
+    build: .
+    volumes:
+      - .:/usr/src/mymaven
+    command: sh generate.sh
