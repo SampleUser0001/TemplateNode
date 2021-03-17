@@ -1,6 +1,5 @@
 # TemplateNode
 Node.js on Dockerのテンプレート  
-（Node.jsと言いつつTypeScriptだが…）
 
 ## 使い方
 
